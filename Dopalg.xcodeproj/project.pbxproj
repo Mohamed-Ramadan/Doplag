@@ -17,6 +17,8 @@
 		AADB1D4327D0B21A0086E826 /* DopalgUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADB1D4227D0B21A0086E826 /* DopalgUITests.swift */; };
 		AADB1D4527D0B21A0086E826 /* DopalgUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADB1D4427D0B21A0086E826 /* DopalgUITestsLaunchTests.swift */; };
 		AADB1D5427D0BA8A0086E826 /* Ocean.mov in Resources */ = {isa = PBXBuildFile; fileRef = AADB1D5327D0BA8A0086E826 /* Ocean.mov */; };
+		AADB1D5627D0E5500086E826 /* VoisOverAudio1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = AADB1D5527D0E5500086E826 /* VoisOverAudio1.m4a */; };
+		AADB1D5827D0E7EF0086E826 /* VoisOverAudio2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = AADB1D5727D0E7EF0086E826 /* VoisOverAudio2.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AADB1D4227D0B21A0086E826 /* DopalgUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopalgUITests.swift; sourceTree = "<group>"; };
 		AADB1D4427D0B21A0086E826 /* DopalgUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopalgUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AADB1D5327D0BA8A0086E826 /* Ocean.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Ocean.mov; sourceTree = "<group>"; };
+		AADB1D5527D0E5500086E826 /* VoisOverAudio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = VoisOverAudio1.m4a; sourceTree = "<group>"; };
+		AADB1D5727D0E7EF0086E826 /* VoisOverAudio2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = VoisOverAudio2.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		AADB1D2027D0B2190086E826 /* Dopalg */ = {
 			isa = PBXGroup;
 			children = (
+				AADB1D5527D0E5500086E826 /* VoisOverAudio1.m4a */,
+				AADB1D5727D0E7EF0086E826 /* VoisOverAudio2.m4a */,
 				AADB1D5327D0BA8A0086E826 /* Ocean.mov */,
 				AADB1D2127D0B2190086E826 /* AppDelegate.swift */,
 				AADB1D2327D0B2190086E826 /* SceneDelegate.swift */,
@@ -234,7 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADB1D5627D0E5500086E826 /* VoisOverAudio1.m4a in Resources */,
 				AADB1D2E27D0B21A0086E826 /* LaunchScreen.storyboard in Resources */,
+				AADB1D5827D0E7EF0086E826 /* VoisOverAudio2.m4a in Resources */,
 				AADB1D5427D0BA8A0086E826 /* Ocean.mov in Resources */,
 				AADB1D2B27D0B21A0086E826 /* Assets.xcassets in Resources */,
 				AADB1D2927D0B2190086E826 /* Main.storyboard in Resources */,
@@ -449,6 +457,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,6 +486,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

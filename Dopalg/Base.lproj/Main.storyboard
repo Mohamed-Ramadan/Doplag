@@ -17,28 +17,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jlB-kW-HH4">
-                                <rect key="frame" x="151.5" y="780" width="111" height="72"/>
+                                <rect key="frame" x="104" y="698" width="206" height="154"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-1Y-DPe" userLabel="Extract Video">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q23-2Z-ftX">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Extract Video"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Original Movie"/>
                                         <connections>
-                                            <action selector="extractVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCm-aI-uFq"/>
+                                            <action selector="videoAndAudioAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6H-Ow-on7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-d8-6hV">
-                                        <rect key="frame" x="0.0" y="41" width="111" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nKE-eO-lnh">
+                                        <rect key="frame" x="0.0" y="41" width="206" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-1Y-DPe" userLabel="Extract Video">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Video Only"/>
+                                                <connections>
+                                                    <action selector="extractVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCm-aI-uFq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeY-d8-6hV">
+                                                <rect key="frame" x="108" y="0.0" width="98" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Audio Only"/>
+                                                <connections>
+                                                    <action selector="extractAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOR-Ii-IHv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nub-e8-Ab0">
+                                        <rect key="frame" x="0.0" y="82" width="206" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Extract Audio"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Video Only With Vois Over 1"/>
                                         <connections>
-                                            <action selector="extractAudioAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOR-Ii-IHv"/>
+                                            <action selector="videoOnlyWithVoisover1Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="FxO-6J-MnP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-xn-qbV">
+                                        <rect key="frame" x="0.0" y="123" width="206" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Video Only With Vois Over 2"/>
+                                        <connections>
+                                            <action selector="videoOnlyWithVoisover2Action" destination="BYZ-38-t0r" eventType="touchUpInside" id="rv3-dW-W7R"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dt8-fa-NEx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="636"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="537.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -46,9 +75,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jlB-kW-HH4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2J1-LJ-zlL"/>
+                            <constraint firstItem="Dt8-fa-NEx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="HgU-Ne-8ld"/>
                             <constraint firstItem="jlB-kW-HH4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="b5u-jc-LCE"/>
                             <constraint firstItem="Dt8-fa-NEx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bAE-El-3YB"/>
-                            <constraint firstItem="jlB-kW-HH4" firstAttribute="top" secondItem="Dt8-fa-NEx" secondAttribute="bottom" constant="100" id="gzg-2o-TY5"/>
                             <constraint firstItem="Dt8-fa-NEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i4Y-Ja-DLh"/>
                             <constraint firstItem="Dt8-fa-NEx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m96-xH-Ioy"/>
                         </constraints>
